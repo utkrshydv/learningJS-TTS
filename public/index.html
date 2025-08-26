@@ -3,58 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TTS</title>
   <link rel="stylesheet" href="styles.css">
-  <title>TTS & Translation App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
- <div class="bg-white shadow-md rounded-lg p-6 max-w-md w-full">
-  <h1 class="text-2xl font-semibold text-gray-800 text-center mb-4">
-    TTS & Translation
-    <textarea
-    class="w-full h-32 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-    placeholder="Type your text here..."
-    ></textarea>
+<body>
 
-    <div class="mt-4">
-        <label
-          for="languageSelect"
-          class="block text-sm font-medium text-gray-700 mb-2"
-          >Select Language</label
-        >
-        <select
-          id="languageSelect"
-          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-        ></select>
-      </div>
-
-      <div class="mt-4">
-        <label
-          for="voiceSelect"
-          class="block text-sm font-medium text-gray-700 mb-2"
-          >Select Voice</label
-        >
-        <select
-          id="voiceSelect"
-          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          <option value="default">Default Voice</option>
-          <option value="voice1">Voice 1</option>
-          <option value="voice2">Voice 2</option>
-        </select>
-      </div>
-
-         <button
-        class="mt-6 duration-300 w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-        id="playButton"
-      >
-        Play Text
-      </button>
+  <div class="container">
+    <div class="title">TTS & Translation</div>
+    
+    <div class="text">
+      <textarea placeholder="Enter text here..."></textarea>
     </div>
 
-    <script src="script.js"></script>
+    <div class="selectors">
+      <div class="select-language">
+         <label for="languageSelect">🌐 Select Language</label>
+         <select id="languageSelect">
+          <option value="default">Default Language</option>
+         </select>
+      </div>
 
-  </h1>
- </div>
+      <div class="select-voice">
+         <label for="voiceSelect">🔊 Select Voice</label>
+         <select id="voiceSelect">
+            <option value="default">Default Voice</option>
+            <option value="voice1">Voice 1</option>
+            <option value="voice2">Voice 2</option>
+         </select>
+      </div>
+    </div>
+    
+    <div class="text">
+      <textarea placeholder="Translated text..."></textarea>
+    </div>
+
+    <button class="translate-button">Translate</button>
+  </div>
+  
 </body>
 </html>
