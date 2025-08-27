@@ -8,20 +8,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
   <div class="container">
-    <div class="title">TTS & Translation</div>
-    
-    <div class="text">
-      <textarea placeholder="Enter text here..."></textarea>
+    <div class="title">TrAnSlAtE</div>
+
+       <div class="text" >
+      <textarea id="outputText" placeholder="Translated text..." disabled></textarea>
     </div>
+    
+   
 
     <div class="selectors">
+       <div class="select-language select-from">
+         <label for="languageSelect">🌐 Translate From</label>
+         <select id="languageSelect-1">
+          <option value="default">Default Language</option>
+         </select>
+      </div>
       <div class="select-language">
-         <label for="languageSelect">🌐 Select Language</label>
-         <select id="languageSelect">
+         <label for="languageSelect">🌐 Translate To</label>
+         <select id="languageSelect-2">
           <option value="default">Default Language</option>
          </select>
       </div>
@@ -29,19 +38,17 @@
       <div class="select-voice">
          <label for="voiceSelect">🔊 Select Voice</label>
          <select id="voiceSelect">
-            <option value="default">Default Voice</option>
-            <option value="voice1">Voice 1</option>
-            <option value="voice2">Voice 2</option>
          </select>
       </div>
     </div>
     
-    <div class="text">
-      <textarea placeholder="Translated text..."></textarea>
+     <div class="text" >
+      <textarea id="inputText" placeholder="Enter text here...">Hello! how are you?</textarea>
     </div>
+ 
 
     <button class="translate-button">Translate</button>
   </div>
-  
+  <script src="script.js"></script>
 </body>
 </html>
