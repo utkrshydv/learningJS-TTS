@@ -10,7 +10,7 @@ A lightweight web app that translates text into multiple languages and reads it 
 
 <div align="center">
 
-https://github.com/user-attachments/assets/5766e6cf-c3da-442f-96af-6d0633fc2f69
+https://github.com/user-attachments/assets/bd7e10f2-74fe-4476-9385-16922c18b120
 
 </div>
 
