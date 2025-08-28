@@ -6,6 +6,16 @@ A lightweight web app that translates text into multiple languages and reads it 
 
 ---
 
+### 🎥 Demo
+
+<div align="center">
+
+https://github.com/user-attachments/assets/5766e6cf-c3da-442f-96af-6d0633fc2f69
+
+</div>
+
+---
+
 ## 🚀 Features
 
 * 🌐 Translate between numerous languages (English, Hindi, Spanish, French, German, Italian, and more)
